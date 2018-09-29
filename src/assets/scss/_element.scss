@@ -1,0 +1,30 @@
+@import "element-variables";
+
+// 主题色列表
+$theme-list: (
+  default:   #409EFF,  // 默认色
+  cyan:      #0BB2D4,  // 青色
+  blue:      #3E8EF7,  // 蓝色
+  green:     #11C26D,  // 绿色
+  turquoise: #17B3A3,  // 蓝绿色
+  indigo:    #667AFA,  // 靛青色
+  brown:     #997B71,  // 棕色
+  purple:    #9463F7,  // 紫色
+  gray:      #757575,  // 灰色
+  orange:    #EB6709,  // 橙色
+  pink:      #F74584,  // 粉红色
+  yellow:    #FCB900,  // 黄色
+  red:       #FF4C52,  // 红色
+);
+
+// 引入.css主题色样式
+$flag: 0;
+@each $key, $value in $theme-list {
+  @if $--color-primary == $value {
+    $flag: 1;
+    @import url("~@/../public/element-theme/#{$key}/index.css");
+  }
+}
+@if $flag == 0 {
+  @import url("~@/../public/element-theme/default/index.css");
+}

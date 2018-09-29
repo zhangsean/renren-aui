@@ -1,0 +1,62 @@
+{
+  "name": "renren-aui",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "build:sit": "vue-cli-service build --mode production.sit",
+    "build:uat": "vue-cli-service build --mode production.uat",
+    "build:prod": "vue-cli-service build --mode production.prod",
+    "lint": "vue-cli-service lint",
+    "et": "node_modules/.bin/et",
+    "et:init": "node_modules/.bin/et -i"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "element-theme": "^2.0.1",
+    "element-theme-chalk": "^2.4.7",
+    "element-ui": "^2.4.7",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^4.0.1",
+    "js-cookie": "^2.2.0",
+    "lodash": "^4.17.11",
+    "node-sass": "^4.9.3",
+    "normalize.css": "^8.0.0",
+    "qs": "^6.5.2",
+    "sass-loader": "^7.1.0",
+    "screenfull": "^3.3.3",
+    "svg-sprite-loader": "^4.1.1",
+    "vue": "^2.5.17",
+    "vue-i18n": "^8.1.0",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1",
+    "webpack-stream": "^5.1.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.4",
+    "@vue/cli-plugin-eslint": "^3.0.4",
+    "@vue/cli-service": "^3.0.4",
+    "@vue/eslint-config-standard": "^3.0.4",
+    "vue-template-compiler": "^2.5.17"
+  },
+  "engines": {
+    "node": ">= 8.11.1",
+    "npm": ">= 5.6.0"
+  },
+  "element-theme": {
+    "config": "./src/assets/scss/_element-variables.scss",
+    "out": "./public/element-theme/default",
+    "minimize": true,
+    "browsers": [
+      "> 1%",
+      "last 2 versions",
+      "not ie <= 10"
+    ]
+  }
+}
