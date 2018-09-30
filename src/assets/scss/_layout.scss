@@ -2,21 +2,6 @@
   position: relative;
   padding-top: $navbar--height;
 }
-// @each $key, $value in $theme-list {
-//   .aui-theme--#{$key} {
-//     .aui-navbar,
-//     .aui-content > .el-tabs > .el-tabs__header > .el-tabs__nav-wrap > .el-tabs__nav-scroll > .el-tabs__nav > .el-tabs__item:after {
-//       background-color: $value;
-//     }
-//     a {
-//       color: $value;
-//       &:focus,
-//       &:hover {
-//         color: $value;
-//       }
-//     }
-//   }
-// }
 
 /* Sidebar fold
 ------------------------------ */
@@ -77,13 +62,6 @@
   height: $navbar--height;
   background-color: $--color-primary;
   box-shadow: 0 1px 0 0 rgba(0, 0, 0, .05);
-  // @each $key, $value in $theme-list {
-  //   &-theme--#{$key} {
-  //     .aui-navbar {
-  //       background-color: $value;
-  //     }
-  //   }
-  // }
   &--colorful {
     .aui-navbar__body {
       background-color: transparent;

@@ -1,9 +1,9 @@
 // Element组件
-@import "element";
+@import "element-variables";
+@import url("~@/../public/element-theme/turquoise/index.css");
 
 // 基架
-@import "~normalize.css/normalize.css";
-// @import "/node_modules/normalize.css/normalize.css";
+@import "normalize";
 @import "variables";
 @import "utilities";
 @import "global";
