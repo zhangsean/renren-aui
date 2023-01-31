@@ -27,7 +27,7 @@
     "js-cookie": "^2.2.0",
     "lodash": "^4.17.11",
     "node-sass": "^7.0.0",
-    "qs": "^6.5.2",
+    "qs": "^6.5.3",
     "sass-loader": "^7.1.0",
     "screenfull": "^3.3.3",
     "svg-sprite-loader": "^4.1.1",
